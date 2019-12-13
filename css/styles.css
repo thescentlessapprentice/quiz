@@ -1,0 +1,66 @@
+body {
+	background-color: black;
+}
+
+
+#title {
+	font-size: 80px;
+	color: white;
+	position: relative;
+	font-family: "Arial";
+}
+
+img {
+	height: 150px;
+	display: inline-block;
+	position: relative;
+	font-family: "Arial";
+	margin-top: 0;
+
+}
+
+
+#subtitle {
+	color: white;
+	font-family: "Arial";
+}
+.instructions {
+color: white;
+font-family: "Arial";
+}
+
+
+.buttons {
+display: inline-block;
+margin-top: 100px;
+
+
+}
+
+p {
+color: white;
+font-family: "Arial";
+}
+
+.answers {
+color: white;
+font-family: "Arial";
+}
+
+#mp {
+color: white;
+font-family: "Arial";
+}
+
+#read{
+	color: white;
+	font-family: "Arial";
+}
+
+
+#final{
+	margin-top: 40px;
+	font-size: 20px;
+	color: white;
+	font-family: "Arial";
+}

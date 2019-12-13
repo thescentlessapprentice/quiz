@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> music and quiz </title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<h1 id="title"> Quiz on History of Cinema </h1>
+
+<img id ="screen" src="images/film.png">
+
+<h1 id="subtitle"> Instructions </h1>
+
+<body>
+
+<p id="read"> If you get the right answer take a break and listen to some good music if you get the answer wrong you have to suffer and listen to the worst band of all time. </p>
+
+<audio id="badSong" >
+  <source src="music/kiss.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="song1" >
+  <source src="music/Cure.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="song2" >
+  <source src="music/Debaser.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="song3" >
+  <source src="music/Digital.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="song4" >
+  <source src="music/Mazzy.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="song5" >
+  <source src="music/Smiths.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="song6" >
+  <source src="music/Undone.mp3" type="audio/mpeg">
+</audio>
+
+
+<h1 id="mp"> Multiple Choice </h1>
+<p div="questions"> 1. What year did Hollywood renaissance end?
+</p>
+
+
+<button onclick="correct1()"> A.	1977 </button>
+<button onclick="wrong()"> B.	1984 </button>
+<button onclick="wrong()"> C.	1956 </button>
+<button onclick="wrong()"> D.	1994 </button>
+
+<p div="questions"> 2. Jean-Luc Godard and Francois Truffaut are directors from what era of film?
+</p>
+
+<button onclick="wrong()"> A.	French Renaissance </button>
+<button onclick="wrong()"> B.	French Revolution </button>
+<button onclick="correct2()"> C.	French New Wave </button>
+<button onclick="wrong()"> D.	Formalist French era </button>
+
+<p div="questions"> 3. Who is known as the pioneer of the montage?
+
+</p>
+
+<button onclick="wrong()"> A.	George Méliès </button>
+<button onclick="correct3()"> B.	Sergei Eisenstein </button>
+<button onclick="wrong()"> C.	D.W Griffith </button>
+<button onclick="wrong()"> D.	Buster Keaton </button>
+
+<p div="questions"> 4. What was George Méliès before he was a filmmaker?</p>
+
+<button onclick="wrong()"> A.	Politician </button>
+<button onclick="correct4()"> B.	Magician </button>
+<button onclick="wrong()"> C.	Poet </button>
+<button onclick="wrong()"> D.	Musician </button>
+
+<p div="questions"> 5. Out of the following who is considered a Hollywood Renaissance Auteur?</p>
+
+<button onclick="wrong()"> A.	George Lucas </button>
+<button onclick="wrong()"> B.	Steven Spielberg </button>
+<button onclick="correct5()"> C.	Stanley Kubrick </button>
+<button onclick="wrong()"> D.	Charles Chaplin </button>
+
+<p div="questions"> 6. Am I an weenie?</p>
+
+<button onclick="correct6()"> A.	Yes </button>
+<button onclick="correct6()"> B.	Oui </button>
+<button onclick="correct6()"> C.	Of course </button>
+<button onclick="wrong()"> D.	No </button>
+
+
+
+
+<h1 id="final"> Thank you for participating. I hope you enojyed the music. If you have failed please refresh and try again.</h1> 
+
+<script type="text/javascript">
+
+var kiss = document.getElementById("badSong");
+var cure = document.getElementById("song1");
+var pixies = document.getElementById("song2");
+var iancurtis = document.getElementById("song3");
+var hope = document.getElementById("song4");
+var marr = document.getElementById("song5");
+var rivers = document.getElementById("song6");
+
+
+	function playKiss() {
+		kiss.play();
+	}
+
+	function playCure() {
+		cure.play();
+	}
+
+	function playPixies() {
+		pixies.play();
+	}
+
+	function playDigital() {
+		iancurtis.play();
+	}
+
+	function playMazzy() {
+		hope.play();
+	}
+
+	function playSmiths() {
+		marr.play();
+	}
+
+	function playWeezer(){
+		rivers.play();
+	}
+
+
+	function wrong() {
+		playKiss();
+		alert("wrong!");
+		
+
+	}
+
+	function correct1() {
+		playCure();
+		alert("correct!");
+		
+
+	}
+	function correct2() {
+		playDigital();
+		alert("correct!");
+		
+	}
+	function correct3() {
+		playPixies();
+		alert("correct!");
+		
+	}
+
+
+	function correct4() {
+		playSmiths();
+		alert("correct!");
+		
+		
+	}
+	function correct5() {
+		playMazzy();
+		alert("correct!");
+		
+		
+	}
+
+	function correct6() {
+		playWeezer();
+		alert("correct!");
+		
+	}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
